@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Personnalité Professionnelle - 20 Questions Gratuites | OrientationPro</title>
+    <meta name="description" content="Passez notre test de personnalité professionnelle gratuit. 20 questions scientifiques basées sur le modèle Big Five pour découvrir votre métier idéal et votre profil professionnel.">
+    <meta name="keywords" content="test personnalité professionnelle, 20 questions, test gratuit, Big Five, métier idéal, profil professionnel, orientation carrière">
+    <meta name="robots" content="index, follow">
+    <meta name="canonical" href="https://sn4xhh.github.io/orientationbyme/test.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Test de Personnalité Professionnelle - 20 Questions Gratuites">
+    <meta property="og:description" content="Découvrez votre profil professionnel idéal avec notre test de personnalité gratuit. 20 questions scientifiques pour une analyse précise.">
+    <meta property="og:url" content="https://sn4xhh.github.io/orientationbyme/test.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-icon">🧠</span>
+                <span class="brand-text">OrientationPro</span>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Retour à l'accueil</a>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <a href="index.html" class="nav-link">Retour à l'accueil</a>
+        </div>
+    </nav>
+
+    <!-- Test Section -->
+    <main class="test-section">
+        <div class="container">
+            <!-- Test Header -->
+            <div class="test-header">
+                <div class="test-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="progress-text" id="progressText">Question 1 sur 20</span>
+                </div>
+            </div>
+
+            <!-- Test Content -->
+            <div class="test-content">
+                <div class="question-container" id="questionContainer">
+                    <!-- Questions will be dynamically loaded here -->
+                </div>
+            </div>
+
+            <!-- Test Navigation -->
+            <div class="test-navigation">
+                <button class="btn btn-secondary" id="prevQuestion" disabled>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    Précédent
+                </button>
+                <button class="btn btn-primary" id="nextQuestion" disabled>
+                    Suivant
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay" style="display: none;">
+        <div class="loading-content">
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+            </div>
+            <h2 class="loading-title">Analyse en cours...</h2>
+            <p class="loading-description">
+                Notre système d'analyse traite vos réponses pour générer votre profil professionnel personnalisé.
+            </p>
+            <div class="loading-progress">
+                <div class="loading-bar">
+                    <div class="loading-fill" id="loadingFill"></div>
+                </div>
+                <span class="loading-text" id="loadingText">Analyse des réponses...</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/test.js"></script>
+</body>
+</html>
